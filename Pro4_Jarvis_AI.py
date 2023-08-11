@@ -93,24 +93,6 @@ def takeCommand():
                     timer=t.strftime( "%H %M %S" )
                     say(f"Sir The time is{timer}")
                     print(f"The time is{timer}")
-                
-                # elif "news" in query:
-                #     say("Tell the topic you are interested in")
-                #     r = sp.Recognizer()
-                #     r.pause_threshold = 1
-                #     audio = r.listen(source)
-                #     print(f"User said: {q}")
-                #     q = r.recognize_google(audio, language='en-in')
-                #     url=f"https://newsapi.org/v2/everything?q={q}&from=2023-06-07&sortBy=publishedAt&apiKey=ceea1fbb09f64105860483b7c7a9b796"
-
-                #     r=requests.get(url) 
-                #     news=json.loads(r.text)
-                #     # for article in news['articles']:
-                #     print(news['articles'][0]['title'])
-                #     say(news['articles'][0]['title'])
-                #     print( news['articles'][0]['description'])
-                #     say( news['articles'][0]['description'])
-                #     print("_____________________________________________________________________________________________________")
                         
                 elif "using artificial intelligence" in query.lower():
                     say("Writing sir")
